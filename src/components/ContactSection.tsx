@@ -110,7 +110,7 @@ const ContactSection = () => {
               <p className="text-sm text-muted-foreground mb-4">Connect with me</p>
               <div className="flex gap-3">
                 <a
-                  href="https://linkedin.com/in/yuvrajtiwari"
+                  href="https://linkedin.com/in/yuvraj-tiwari-31ba1739a"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-icon"

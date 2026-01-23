@@ -22,7 +22,7 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 opacity-0 animate-fade-up stagger-2">
-            Data Analyst & Machine Learning Enthusiast
+            Data Analyst & ML Engineer
           </h2>
           
           <p className="text-muted-foreground max-w-xl mx-auto mb-10 opacity-0 animate-fade-up stagger-3">
@@ -48,7 +48,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-4 opacity-0 animate-fade-up stagger-5">
             <a
-              href="https://linkedin.com/in/yuvrajtiwari"
+              href="https://linkedin.com/in/yuvraj-tiwari-31ba1739a"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"

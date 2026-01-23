@@ -14,6 +14,7 @@ const projects = [
     ],
     tools: ["Python", "Pandas", "NumPy", "Scikit-learn", "Streamlit", "GitHub"],
     github: "https://github.com/yuvrajtiwari-work",
+    liveDemo: "https://new-app1234.streamlit.app/",
   },
   {
     icon: Stethoscope,
@@ -28,6 +29,7 @@ const projects = [
     ],
     tools: ["Python", "TensorFlow", "Keras", "NumPy", "Matplotlib", "Google Colab"],
     github: "https://github.com/yuvrajtiwari-work",
+    liveDemo: null,
   },
 ];
 
@@ -83,18 +85,24 @@ const ProjectsSection = () => {
               <div className="flex items-center gap-4 mt-6">
                 <a
                   href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Github size={16} />
                   <span>View Code</span>
                 </a>
-                <a
-                  href="#"
-                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  <ExternalLink size={16} />
-                  <span>Live Demo</span>
-                </a>
+                {project.liveDemo && (
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <ExternalLink size={16} />
+                    <span>Live Demo</span>
+                  </a>
+                )}
               </div>
             </div>
           ))}
