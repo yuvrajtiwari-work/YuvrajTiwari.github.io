@@ -1,6 +1,22 @@
-import { Film, Stethoscope, ExternalLink, Github } from "lucide-react";
+import { Film, Stethoscope, ShoppingCart, ExternalLink, Github } from "lucide-react";
 
 const projects = [
+  {
+    icon: ShoppingCart,
+    title: "Customer Behavior Analysis",
+    type: "Personal Project",
+    description:
+      "Analyzed 3,900+ customer transactions to identify spending patterns, product preferences, and subscription behavior with actionable business insights.",
+    highlights: [
+      "Performed data cleaning, EDA, and feature engineering using Python (Pandas)",
+      "Wrote SQL queries to segment customers, analyze revenue, and evaluate subscription behavior",
+      "Built an interactive Power BI dashboard to visualize key business insights",
+      "Generated recommendations for marketing, loyalty programs, and discount strategy",
+    ],
+    tools: ["Python", "PostgreSQL", "Power BI", "Excel", "Pandas", "SQL"],
+    github: "https://github.com/yuvrajtiwari-work/Customer_behavior_analysis",
+    liveDemo: null,
+  },
   {
     icon: Film,
     title: "Movie Recommendation System",
