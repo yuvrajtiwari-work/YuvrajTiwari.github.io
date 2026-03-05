@@ -1,4 +1,4 @@
-import { Film, Stethoscope, ExternalLink, Github } from "lucide-react";
+import { Film, Stethoscope, ShoppingCart, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
