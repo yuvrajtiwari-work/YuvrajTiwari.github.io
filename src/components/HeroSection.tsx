@@ -1,5 +1,5 @@
 import { ArrowDown, Download, Linkedin, Mail, Github } from "lucide-react";
-import aiBackground from "@/assets/ai-background.jpg";
+import mlWordcloud from "@/assets/ml-wordcloud-bg.jpg";
 
 const HeroSection = () => {
   return (
@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${aiBackground})` }}
+        style={{ backgroundImage: `url(${mlWordcloud})` }}
       />
       <div className="absolute inset-0 bg-background/70" />
       
