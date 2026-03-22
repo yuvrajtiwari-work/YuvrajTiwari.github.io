@@ -1,5 +1,5 @@
 import { ArrowDown, Download, Linkedin, Mail, Github } from "lucide-react";
-import aiBackground from "@/assets/ai-background.jpg";
+import mlWordcloud from "@/assets/ml-wordcloud-bg.jpg";
 
 const HeroSection = () => {
   return (
