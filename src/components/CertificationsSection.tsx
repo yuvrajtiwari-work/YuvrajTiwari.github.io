@@ -1,4 +1,4 @@
-import { Award, ExternalLink, Trophy, BookOpen } from "lucide-react";
+import { Award, ExternalLink, Trophy, BookOpen, Code, Terminal } from "lucide-react";
 import sqlBasicCert from "@/assets/sql-basic-certificate.jpg";
 import sqlIntermediateCert from "@/assets/sql-intermediate-certificate.jpg";
 import sqlAdvancedCert from "@/assets/sql-advanced-certificate.jpg";
@@ -13,6 +13,11 @@ import ibmDataScienceCert from "@/assets/ibm-data-science-certificate.jpg";
 import kaggleDataCleaning from "@/assets/kaggle-data-cleaning.png";
 import kaggleIntroML from "@/assets/kaggle-intro-ml.png";
 import kagglePython from "@/assets/kaggle-python.png";
+import kagglePandas from "@/assets/kaggle-pandas.png";
+import kaggleIntroProgramming from "@/assets/kaggle-intro-programming.png";
+import leetcodeSql50 from "@/assets/leetcode-sql50.png";
+import leetcodePandas from "@/assets/leetcode-pandas.png";
+import hackerrankBadges from "@/assets/hackerrank-badges.png";
 
 const professionalCertifications = [
   {
@@ -110,6 +115,14 @@ const otherCertifications = [
 
 const kaggleCertifications = [
   {
+    title: "Intro to Programming",
+    issuer: "Kaggle",
+    date: "19 Mar, 2026",
+    id: "Kaggle",
+    link: "https://www.kaggle.com/learn/certification/yuvraj/intro-to-programming",
+    image: kaggleIntroProgramming,
+  },
+  {
     title: "Data Cleaning",
     issuer: "Kaggle",
     date: "17 Mar, 2026",
@@ -132,6 +145,14 @@ const kaggleCertifications = [
     id: "Kaggle",
     link: "https://www.kaggle.com/learn/certification/yuvraj/python",
     image: kagglePython,
+  },
+  {
+    title: "Pandas",
+    issuer: "Kaggle",
+    date: "26 Feb, 2026",
+    id: "Kaggle",
+    link: "https://www.kaggle.com/learn/certification/yuvraj/pandas",
+    image: kagglePandas,
   },
 ];
 
@@ -203,7 +224,7 @@ const CertificationsSection = () => {
           </div>
         </div>
 
-        {/* Other Certifications */}
+        {/* Course Certifications */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <Award className="text-primary" size={22} />
@@ -216,8 +237,8 @@ const CertificationsSection = () => {
           </div>
         </div>
 
-        {/* Kaggle Certifications */}
-        <div>
+        {/* Kaggle Courses */}
+        <div className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <BookOpen className="text-primary" size={22} />
             <h3 className="text-lg font-bold">Kaggle Courses</h3>
@@ -226,6 +247,97 @@ const CertificationsSection = () => {
             {kaggleCertifications.map((cert, index) => (
               <CertCard key={index} cert={cert} />
             ))}
+          </div>
+        </div>
+
+        {/* Platform Badges & Achievements */}
+        <div>
+          <div className="flex items-center gap-3 mb-6">
+            <Code className="text-primary" size={22} />
+            <h3 className="text-lg font-bold">Platform Badges & Achievements</h3>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+            {/* HackerRank */}
+            <a
+              href="https://www.hackerrank.com/profile/yuvrajtiwari_wo1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-portfolio group cursor-pointer"
+            >
+              <div className="relative overflow-hidden rounded-lg mb-4 bg-background flex items-center justify-center p-4">
+                <img
+                  src={hackerrankBadges}
+                  alt="HackerRank Badges - Python 2 Star, SQL 5 Star"
+                  className="w-full max-w-[280px] h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Terminal className="text-primary" size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold group-hover:text-primary transition-colors">
+                    HackerRank Badges
+                  </h3>
+                  <p className="text-sm text-muted-foreground">SQL ⭐⭐⭐⭐⭐ · Python ⭐⭐</p>
+                  <p className="text-xs text-muted-foreground mt-1">5-Star SQL · 2-Star Python</p>
+                </div>
+              </div>
+            </a>
+
+            {/* LeetCode SQL 50 */}
+            <a
+              href="https://leetcode.com/u/Yuvraj_Tiwari_Work/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-portfolio group cursor-pointer"
+            >
+              <div className="relative overflow-hidden rounded-lg mb-4">
+                <img
+                  src={leetcodeSql50}
+                  alt="LeetCode SQL 50 Badge"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Code className="text-primary" size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold group-hover:text-primary transition-colors">
+                    SQL 50
+                  </h3>
+                  <p className="text-sm text-muted-foreground">LeetCode</p>
+                </div>
+              </div>
+            </a>
+
+            {/* LeetCode Introduction to Pandas */}
+            <a
+              href="https://leetcode.com/u/Yuvraj_Tiwari_Work/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-portfolio group cursor-pointer"
+            >
+              <div className="relative overflow-hidden rounded-lg mb-4">
+                <img
+                  src={leetcodePandas}
+                  alt="LeetCode Introduction to Pandas Badge"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Code className="text-primary" size={20} />
+                </div>
+                <div>
+                  <h3 className="font-bold group-hover:text-primary transition-colors">
+                    Introduction to Pandas
+                  </h3>
+                  <p className="text-sm text-muted-foreground">LeetCode</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
