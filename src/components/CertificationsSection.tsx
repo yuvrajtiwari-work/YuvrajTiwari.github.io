@@ -284,11 +284,33 @@ const CertificationsSection = () => {
             ))}
           </div>
 
-          {/* Kaggle Certs */}
+          {/* Kaggle Certs - List Style */}
           <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-4 ml-1">Kaggle Courses</h4>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mb-8">
+          <div className="max-w-4xl mx-auto mb-8 space-y-0 divide-y divide-border rounded-lg overflow-hidden border border-border">
             {kaggleCerts.map((cert, index) => (
-              <CertCard key={index} cert={cert} />
+              <a
+                key={index}
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between px-5 py-4 bg-card hover:bg-muted/50 transition-colors group"
+              >
+                <div className="flex items-center gap-4">
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-12 h-12 rounded-lg object-cover"
+                  />
+                  <div>
+                    <h4 className="font-bold group-hover:text-primary transition-colors">{cert.title}</h4>
+                    <p className="text-sm text-muted-foreground">Congratulations, you did it! Your certificate is ready.</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 text-primary font-medium text-sm shrink-0 ml-4">
+                  <Award size={16} />
+                  View Certificate
+                </div>
+              </a>
             ))}
           </div>
 
