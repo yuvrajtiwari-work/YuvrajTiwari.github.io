@@ -46,12 +46,17 @@ const ExperienceSection = () => {
             <div key={expIndex} className="card-portfolio relative">
               {/* Company Header */}
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Briefcase className="text-primary" size={20} />
-                    <h3 className="text-xl font-bold">{exp.title}</h3>
+                <div className="flex items-center gap-4">
+                  {exp.logo && (
+                    <img src={exp.logo} alt={exp.company} className="w-10 h-10 object-contain rounded" />
+                  )}
+                  <div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <Briefcase className="text-primary" size={18} />
+                      <h3 className="text-xl font-bold">{exp.title}</h3>
+                    </div>
+                    <p className="text-muted-foreground">{exp.company}</p>
                   </div>
-                  <p className="text-muted-foreground">{exp.company}</p>
                 </div>
                 <div className="flex items-center gap-2 text-primary font-mono text-sm">
                   <Calendar size={16} />

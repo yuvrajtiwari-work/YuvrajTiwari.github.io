@@ -74,7 +74,6 @@ const skillCategories = [
       "Conditional Formatting",
       "Data Validation",
       "Charts & Dashboards",
-      "Microsoft Office",
     ],
   },
   {
