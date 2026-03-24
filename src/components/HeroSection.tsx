@@ -40,14 +40,9 @@ const HeroSection = () => {
               Yuvraj <span className="text-gradient">Tiwari</span>
             </h1>
             
-            <h2 className="text-lg md:text-xl text-muted-foreground mb-6 opacity-0 animate-fade-up stagger-2">
-              Data Analyst & ML Engineer
+            <h2 className="text-sm md:text-base text-muted-foreground mb-6 opacity-0 animate-fade-up stagger-2">
+              Data Analyst | Aspiring Machine Learning & MLOps Engineer | Python • SQL • Snowflake • Power BI | B.Tech IT '24 | IBM Certified Data Analyst & Data Science Professional
             </h2>
-            
-            <p className="text-muted-foreground text-sm md:text-base max-w-lg mb-8 opacity-0 animate-fade-up stagger-3">
-              Transforming complex data into actionable insights. IBM Certified Data Analyst 
-              & Data Science Professional | Python, SQL, Power BI | Analytics & ML
-            </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-start gap-4 mb-8 opacity-0 animate-fade-up stagger-4">
