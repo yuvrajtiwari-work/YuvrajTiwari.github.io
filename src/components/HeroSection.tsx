@@ -44,7 +44,8 @@ const HeroSection = () => {
               Data Analyst | Aspiring Machine Learning & MLOps Engineer | Python • SQL • Snowflake • Power BI | B.Tech IT '24 | IBM Certified Data Analyst & Data Science Professional
             </h2>
 
-            {/* Social Links - LinkedIn, Mail, GitHub */}
+            {/* Socials */}
+            <p className="text-xs font-mono text-muted-foreground mb-2 opacity-0 animate-fade-up stagger-3">Socials</p>
             <div className="flex items-center gap-4 mb-6 opacity-0 animate-fade-up stagger-3">
               <a
                 href="https://linkedin.com/in/yuvraj-tiwari-31ba1739a"
@@ -89,7 +90,8 @@ const HeroSection = () => {
               </a>
             </div>
 
-            {/* Platform Links - Kaggle, HackerRank, LeetCode */}
+            {/* Platforms */}
+            <p className="text-xs font-mono text-muted-foreground mb-2 opacity-0 animate-fade-up stagger-5">Platforms</p>
             <div className="flex items-center gap-4 opacity-0 animate-fade-up stagger-5">
               <a
                 href="https://www.kaggle.com/yuvrajwork"
