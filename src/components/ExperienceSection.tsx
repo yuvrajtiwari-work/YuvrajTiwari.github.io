@@ -1,4 +1,6 @@
 import { Briefcase, Calendar } from "lucide-react";
+import pharmaaceLogo from "@/assets/pharmaace-logo.png";
+import bestpeersLogo from "@/assets/bestpeers-logo.png";
 
 const ExperienceSection = () => {
   const experiences = [
