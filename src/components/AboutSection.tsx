@@ -1,4 +1,6 @@
 import { User, Mail, Phone, MapPin, GraduationCap } from "lucide-react";
+import sgsitsLogo from "@/assets/sgsits-logo.png";
+import kvsLogo from "@/assets/kvs-logo.png";
 
 const AboutSection = () => {
   return (
