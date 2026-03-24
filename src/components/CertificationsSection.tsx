@@ -17,8 +17,8 @@ import kagglePandas from "@/assets/kaggle-pandas.png";
 import kaggleIntroProgramming from "@/assets/kaggle-intro-programming.png";
 import leetcodeSql50 from "@/assets/leetcode-sql50.png";
 import leetcodePandas from "@/assets/leetcode-pandas.png";
-import hackerrankBadges from "@/assets/hackerrank-badges.png";
-
+import hackerrankSqlBadge from "@/assets/hackerrank-sql-badge.png";
+import hackerrankPythonBadge from "@/assets/hackerrank-python-badge.png";
 const professionalCertifications = [
   {
     title: "IBM Data Science Professional Certificate",
