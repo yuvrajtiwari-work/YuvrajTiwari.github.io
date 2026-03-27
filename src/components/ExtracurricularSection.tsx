@@ -11,7 +11,7 @@ const activities = [
   {
     title: "Commander",
     organization: "NATIONAL CADET CORPS - India",
-    subtitle: "A Certificate",
+    subtitle: "A Certificate · Associated with KV No.1, Indore",
     period: "Apr 2016 – Mar 2018 · 2 yrs",
     category: "Govt. Youth Organisation",
   },
